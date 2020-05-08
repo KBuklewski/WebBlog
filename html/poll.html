@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Kontakt</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div id="close"></div>
+        <header id="open">
+            <div class="header-content">
+                <h1>Fooder</h1>
+                <div id="btn-menu">
+                    <div><a href="#open"><img src="../img/ic_menu.svg" alt="menu"></a></div>
+                    <div><a href="#close"><img src="../img/ic_cancel.svg" alt="close"></a></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li id="menuGame"><a href="game.html">Spiel</a></li>
+                    </ul>
+                    <div class="separation"></div>
+                    <div class="item-poll"><a href="poll.html">Umfrage</a></div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2>Umfrage</h2>
+                <form>
+                    <fieldset>
+                        <legend>Wie oft gehst du essen?</legend>
+                        <div class="option">
+                            <input type="radio" id="1a" name="q1">
+                            <label for="1a">Jeden Tag</label> 
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="1b" name="q1">  
+                            <label for="1b">Wöchentlich</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="1c" name="q1">
+                            <label for="1c">Monatlich</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="1d" name="q1">
+                            <label for="1d">Zu Anlässen</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Was isst du gerne?</legend>
+                        <div class="option">
+                            <input type="checkbox" id="2a">
+                            <label for="2a">Amerikanisch</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="2b">
+                            <label for="2b">Asiatisch</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="2c">
+                            <label for="2c">Europäisch</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Worüber würdest du gerne mehr lesen?</legend>
+                        <input type="text">
+                    </fieldset>
+                    <input type="submit" value="Senden">
+                    <input type="reset" value="Löschen">
+                </form>
+        </main>
+        <footer>
+            <p>&copy; Fritz &amp; Karl</p>
+        </footer>
+        <script src="../js/poll.js"></script>
+    </body> 
+</html>

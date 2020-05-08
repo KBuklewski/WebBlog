@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Spiel</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <script src="../js/game.js"></script>
+        <div id="close"></div>
+        <header id="open">
+            <div class="header-content">
+                <h1>Fooder</h1>
+                <div id="btn-menu">
+                    <div><a href="#open"><img src="../img/ic_menu.svg" alt="menu"></a></div>
+                    <div><a href="#close"><img src="../img/ic_cancel.svg" alt="close"></a></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li id="menuGame"><a href="game.html">Spiel</a></li>
+                    </ul>
+                    <div class="separation"></div>
+                    <div class="item-poll"><a href="poll.html">Umfrage</a></div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2>Schere, Stein, Papier</h2>
+            <section class="gamecontent">
+                <div class="goptions">
+                    <img src="../img/scissors.svg" class="goption" id="option1" alt="schere">
+                    <img src="../img/stone.svg" class="goption" id="option2" alt="stein">
+                    <img src="../img/paper-plane.svg" class="goption" id="option3" alt="papier">
+                </div>
+                <div class="gresults">
+                    <p id="wins">0</p>
+                    <p>:</p>
+                    <p id="losses">0</p>
+                </div>
+                <p id="log">Triff deine Wahl</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Fritz &amp; Karl</p>
+        </footer>
+    </body> 
+</html>

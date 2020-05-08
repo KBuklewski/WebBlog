@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <h1>Fooder</h1>  
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="html/about.html">Über uns</a></li>
+                        <li><a href="html/contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2>Blog</h2>
+            <section class="card poll">
+                <h3>Umfrage</h3>
+                <form>
+                    <fieldset>
+                        <legend>Wie oft gehst du essen?</legend>
+                        <div class="form-element">
+                            <input type="radio" id="1a" name="q1">
+                            <label for="1a">Jeden Tag</label> 
+                        </div>
+                        <div class="form-element">
+                            <input type="radio" id="1b" name="q1">  
+                            <label for="1b">Wöchentlich</label>
+                        </div>
+                        <div class="form-element">
+                            <input type="radio" id="1c" name="q1">
+                            <label for="1c">Monatlich</label>
+                        </div>
+                        <div class="form-element">
+                            <input type="radio" id="1d" name="q1">
+                            <label for="1d">Zu Anlässen</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Was isst du gerne?</legend>
+                        <div class="form-element">
+                            <input type="checkbox" id="2a">
+                            <label for="2a">Amerikanisch</label>
+                        </div>
+                        <div class="form-element">
+                            <input type="checkbox" id="2b">
+                            <label for="2b">Asiatisch</label>
+                        </div>
+                        <div class="form-element">
+                            <input type="checkbox" id="2c">
+                            <label for="2c">Europäisch</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Worüber würdest du gerne mehr lesen?">
+                    </fieldset>
+                    <div class="buttons">
+                        <input type="submit" value="Senden">
+                        <input type="reset" value="Löschen">
+                    </div>
+                </form>
+            </section>
+            
+            <article>
+                <img src="img/burger.jpg" alt="burger">
+                <section class="description">
+                    <h3>Gesnackt  bei Burgermeister</h3>
+                    <time datetime="2018-05-03">am 03.05.2018 von Karl</time><p>Heute waren wir bei Burgermeister und haben uns saftige Burger gegönnt. Der Cheeseburger, den ich hatte, war echt der beste, den ich bisher gegessen habe.</p>
+                </section>
+            </article>
+            <article>
+                <img src="img/noodles.jpg" alt="nudeln">
+                <section class="description">
+                    <h3>Oodles of Noodles</h3>
+                    <time datetime="2018-05-02">am 02.05.2018 von Fritz</time><p>Asiatisch ist ja nichts für jedermann, aber ich glaube bei Nudeln machen alle eine Ausnahme. Die Nudelsuppe beim Vietnamesen "Madami" am Alex muss man probiert haben.</p>
+                </section>
+            </article>
+            <article>
+                <img src="img/fries.jpg" alt="pommes">
+                <section class="description">
+                    <h3>Fritten mit Klasse</h3>
+                    <time datetime="2018-04-30">am 30.04.2018 von Fritz</time><p>Pommes Frites kann man leicht zur Hauptspeise machen, indem man etwas Bacon knusprig anbrät, Lidl-Soße draufhaut und ein wenig Grünzeug reinschnippelt.</p>
+                </section>
+            </article>
+            <article>
+                <img src="img/brot.jpg" alt="brot">
+                <section class="description">
+                    <h3>Leckeres Frühstück</h3>
+                    <time datetime="2018-04-29">am 29.04.2018 von Karl</time><p>Am Wochenende habe ich meine Eltern besucht und mir wurde ein köstliches und gesundes Frühstück bereitet. Muddern ist die Beste.</p>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; Fritz &amp; Karl</p>
+        </footer>
+    </body>
+</html>

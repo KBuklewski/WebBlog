@@ -1,0 +1,482 @@
+* {
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    padding: 1.9rem;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+h4 {
+    text-align: center;
+}
+
+time {
+    color: gray;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/**************************************************/
+
+header {
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    z-index: 1;
+    background: rgba(255, 255, 255, 1);
+    pointer-events: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+#btn-menu a {
+    position: absolute;
+    top: 3.4rem;
+    right: 3.4rem;
+    pointer-events: all;
+}
+
+nav {
+    height: 100vh;
+    padding-top: 20rem;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+nav ul li {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+li a {
+    font-size: 5rem;
+}
+
+header img {
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+
+#close {
+    position: fixed;
+}
+
+[href="#close"] {
+    display: none;
+}
+
+#open:target nav {
+    opacity: 1;
+}
+
+#open:target {
+    pointer-events: all;
+}
+
+#open:target [href="#close"] {
+    display: block;
+}
+
+#open:target [href="#open"] {
+    display: none;
+}
+
+.separation {
+    width: 15%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.5rem;
+    background: #d9d9d9;
+}
+
+.item-poll {
+    text-align: center;
+}
+
+.item-poll a {
+    font-size: 3rem;
+}
+
+#menuGame {
+    display: none;
+}
+
+#validText {
+    margin-bottom: 3.5rem;
+}
+
+/**************************************************/
+
+.poll {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/**************************************************/
+
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 13rem;
+}
+
+p {
+    line-height: 1.6rem;
+}
+
+.article {
+    margin-bottom: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1.8rem;
+    transition: all .2s;
+}
+
+.article:hover {
+    transform: scale(1.025);
+}
+
+.article section {
+    padding: 3rem;
+}
+
+.article img {
+    width: 100%;
+    border-radius: 1.8rem 1.8rem 0 0;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    top: 20rem;
+    margin-bottom: 8rem;
+}
+
+footer p {
+    font-size: 2.4rem;
+}
+
+/**************************************************/
+
+.about-img {
+    display: block;
+    border-radius: 1.8rem; 
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3.5rem;
+}
+
+/**************************************************/
+
+input[type="radio"], input[type="checkbox"] {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 2rem;
+}
+
+input[type="text"], textarea {
+    width: 92%;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    background: rgba(0,0,0,0.05);
+    border: none;
+    border-radius: 1rem;
+    resize: none;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+}
+
+form {
+    margin-bottom: 5rem;
+}
+
+input[type="submit"], input[type="reset"] {
+    font-size: 2rem;
+    padding: 2rem;
+    background: none;
+    border: none;
+}
+
+.contact p, .contact a{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 3.5rem;
+    background: rgba(0,0,0,0.03);
+    padding: 3rem;
+    border-radius: 1.8rem;
+}
+
+legend {
+    font-size: 3rem;
+    padding: 2rem;
+    background: rgb(255, 255, 255);
+    border-radius: 1.8rem;
+}
+
+label {
+    font-size: 2.6rem;
+}
+
+.option {
+    line-height: 5rem;
+}
+
+/**************************************************/
+/*Game*********************************************/
+/**************************************************/
+
+.goptions {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+}
+
+.goption {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+}
+
+.goptions p {
+    background: rgb(240, 240, 240);
+}
+
+.gresults {
+        display: flex;
+        justify-content: center;
+}
+
+.gresults p {
+    font-size: 2.4rem;
+    line-height: 5rem;
+}
+
+#log {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.gamecontent {
+    margin-top: 10rem;
+}
+
+/**************************************************/
+/*Responsive***************************************/
+/**************************************************/
+
+@media only screen and (min-width: 80rem) {
+    h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+
+    time {
+        color: gray;
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    header {
+        height: 4.6rem;
+}
+    
+    header img {
+        width: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    #btn-menu a {
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    nav {
+        padding-top: 11rem;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+        
+    li a {
+        font-size: 2rem;
+    }
+
+    .item-poll a {
+        font-size: 1.5rem;
+    }
+    
+    .separation {
+        margin-bottom: 2.5rem;
+    }
+    
+    main {
+        top: 8rem;
+    }
+    
+    .blog {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 5%;
+        justify-items: center;
+    }
+
+    .article {
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+    }
+    
+    .article section {
+        padding: 1.5rem;
+    }
+
+    .article img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    
+    .about-img {
+        border-radius: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    footer {
+        top: 11.5rem;
+        margin-bottom: 5rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+    
+    input[type="radio"], input[type="checkbox"] {
+        height: 1rem;
+        width: 1rem;
+        margin-right: 1rem;
+    }
+
+    input[type="text"], textarea {
+        font-size: 1rem;
+        padding: 1rem;
+        width: 96%;
+        margin-bottom: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    form {
+        margin-bottom: 5rem;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .contact p, .contact a{
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    fieldset {
+        border: none;
+        margin-bottom: 2.5rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    legend {
+        font-size: 1.5rem;
+        padding: 1rem;
+        background: rgb(255, 255, 255);
+        border-radius: 1rem;
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    .option {
+        line-height: 2rem;
+    }
+    
+    .goption {
+        transition: all .5s;
+    }
+    
+    .goption:hover {
+        transform: scale(1.3);
+    }
+    
+    .goption:active {
+        transform: scale(1.5);
+    }
+    
+    .goptions {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .gresults {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gresults p {
+        font-size: 1rem;
+    }
+
+    .gamecontent {
+        margin-top: 6rem;
+    }
+}

@@ -1,0 +1,305 @@
+/* Universelle Styles */
+* {
+    font-family: sans-serif;
+    box-sizing: content-box;
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem
+}
+
+h2 {
+    font-size: 2.0rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: .3rem;
+}
+
+h4 {
+    font-size: 1.0rem;
+}
+
+p {
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+    color: rgb(145, 145, 145);
+    font-family: serif;
+}
+
+a {color: rgb(145, 145, 145); text-decoration: none;}
+a:hover {color: rgb(0, 0, 0)}
+a:active {color: rgb(145, 145, 145)}
+a:focus {color: rgb(145, 145, 145)}
+
+
+/* Content */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: rgb(255,255,255);
+    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.12);
+}
+
+.header-content {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content h1:hover {
+    transform: scale(1.2) rotate(20deg);
+}
+
+nav {
+    line-height: 3rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+nav li:last-of-type {
+    margin-right: 0;
+}
+
+main {
+    width: 60%;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+time {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    color: rgb(123, 123, 123);
+    text-decoration: none;
+}
+
+article {
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+    background: rgb(255,255,255);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.12);
+    transition: box-shadow .5s, border-color .5s;
+}
+
+article:last-of-type {
+    padding-bottom: 0;
+}
+
+article:hover{
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+article img {
+    width: 100%;
+    border-radius: .8rem .8rem 0rem 0rem;
+}
+
+.description {
+    padding: 1.6rem 2rem 2rem 2rem;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: .8rem;
+    margin-bottom: 2.5rem;
+}
+
+.about-p {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+
+/* Umfrage */
+.card {
+    padding: 2rem;
+    border-radius: .8rem;
+    margin-bottom: 2.5rem;
+    background: rgb(255,255,255);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.12);
+    transition: box-shadow .5s;
+}
+
+.card:hover {
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card legend {
+    font-size: 1.1rem;
+}
+
+.poll {
+    max-height: 1.6rem;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.1);
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    transition: max-height .5s, border-color .5s;
+}
+
+.poll:hover {
+    height: auto;
+    max-height: 50rem;
+    border-color: rgba(0,0,0,0);
+}
+
+fieldset {
+    border: 0px;
+    margin-top: 1.6rem;
+}
+
+fieldset:last-of-type {
+    margin-bottom: 1.6rem;
+}
+
+legend {
+    margin-bottom: .6rem;
+}
+
+.form-element {
+    margin-bottom: 1rem;
+}
+
+label {
+    color: rgb(128, 128, 128);
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-color: rgb(230, 230, 230);
+}
+
+textarea {
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    resize: none;
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-color: rgb(230, 230, 230);
+    margin-bottom: .4rem;
+}
+
+input[type="submit"] {
+    margin-right: 1rem;
+}
+
+input[type="submit"], input[type="reset"] {
+    font-size: .9rem;
+    text-transform: uppercase;
+    border-style: none;
+    background: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+footer {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+
+
+/* Responsive */
+@media (orientation: portrait), (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+    
+    h2 {
+        margin-left: 1rem;
+    }
+    
+    time {
+        font-size: 1.1rem;
+    }
+    
+    p, label, input, textarea, legend{
+        font-size: 1.3rem;
+    }
+    
+    legend {
+        margin-bottom: 1rem;
+    }
+    
+    input[type="text"] {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    input[type="submit"], input[type="reset"] {
+        font-size: 1.1rem;
+    }
+    
+    .header-content {
+        width: 90%;
+        padding-top: .4;
+        padding-bottom: .8rem;
+        text-align: center;
+    }
+    
+    main {
+        width: 90%;
+        top: 6rem;
+    }
+    
+    .card {
+        box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.12);
+    }
+    
+    .poll {
+        border-style: none;
+        max-height: 50rem;
+    }
+    
+    article {     
+        box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.12);
+    }
+}
